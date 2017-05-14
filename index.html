@@ -77,8 +77,11 @@
         image.src=c.toDataURL();
         avideo.setAttribute('src', image.src);
       }
-      //60 frames per second
-      setInterval(generateFrames,42);
+      //60 frames per second; fps = 16
+      //24 frames per second; fps = 42
+      //10 frames per second; fps = 100
+      var fps = 100;
+      setInterval(generateFrames,fps);
     </script>
     
 
